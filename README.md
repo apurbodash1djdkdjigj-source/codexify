@@ -1,237 +1,205 @@
-/* vietnamese */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawDFXplDs.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codexify — Global Digital Agency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Bricolage+Grotesque:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+/* ✅ FIXED RESET */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-/* latin-ext */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawDVXplDs.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+
+:root {
+  --bg:#04050F;
+  --bg2:#060812;
+  --card:#0D1128;
+  --blue:#5B8FFF;
+  --violet:#A855F7;
+  --pink:#EC4899;
+  --white:#F1F5FF;
+  --muted:#4B5680;
 }
-/* latin */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawA1Xp.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+
+/* BODY */
+body{
+  background:var(--bg);
+  color:var(--white);
+  font-family:'Bricolage Grotesque',sans-serif;
+  overflow-x:hidden;
 }
-/* vietnamese */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawDFXplDs.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+
+/* NAV */
+#nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 40px;
+  background:rgba(4,5,15,.7);
+  backdrop-filter:blur(10px);
 }
-/* latin-ext */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawDVXplDs.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+
+.nav-logo{
+  font-family:'Syne',sans-serif;
+  font-weight:800;
+  font-size:1.2rem;
 }
-/* latin */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawA1Xp.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+
+.nav-links{
+  display:flex;
+  gap:20px;
 }
-/* vietnamese */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawDFXplDs.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+
+.nav-links a{
+  color:var(--muted);
+  font-size:.8rem;
 }
-/* latin-ext */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawDVXplDs.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+
+.nav-links a:hover{
+  color:white;
 }
-/* latin */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawA1Xp.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+
+/* HERO */
+#hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:100px 20px;
 }
-/* vietnamese */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawDFXplDs.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+
+.hero-h{
+  font-family:'Syne',sans-serif;
+  font-size:clamp(3rem,7vw,6rem);
+  font-weight:800;
+  line-height:1;
 }
-/* latin-ext */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawDVXplDs.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+
+.hero-h .grad{
+  background:linear-gradient(120deg,var(--blue),var(--violet),var(--pink));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
-/* latin */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawA1Xp.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+
+.hero-sub{
+  margin-top:20px;
+  max-width:600px;
+  color:rgba(255,255,255,.6);
+  line-height:1.8;
 }
-/* latin-ext */
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dmmono/v16/aFTR7PB1QTsUX8KYvrGyEY2tbZX9.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+
+/* CTA */
+.cta{
+  margin-top:30px;
+  padding:12px 30px;
+  border-radius:10px;
+  border:none;
+  background:linear-gradient(135deg,var(--blue),var(--violet));
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
 }
-/* latin */
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dmmono/v16/aFTR7PB1QTsUX8KYvrGyEYOtbQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+
+.cta:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 40px rgba(91,143,255,.4);
 }
-/* latin-ext */
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dmmono/v16/aFTU7PB1QTsUX8KYthSQBLyM.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+
+/* ✅ LIGHT AURORA (optimized) */
+.aurora{
+  position:fixed;
+  width:500px;
+  height:500px;
+  border-radius:50%;
+  filter:blur(80px); /* FIXED (140 → 80) */
+  opacity:.2;
+  z-index:0;
 }
-/* latin */
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dmmono/v16/aFTU7PB1QTsUX8KYthqQBA.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+
+.a1{
+  background:var(--blue);
+  top:-100px;
+  right:-100px;
 }
-/* greek */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm2NL9Hz_.woff2) format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+
+.a2{
+  background:var(--violet);
+  bottom:-100px;
+  left:-100px;
 }
-/* latin-ext */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm25L9Hz_.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+
+/* SECTION */
+.section{
+  padding:80px 20px;
+  text-align:center;
 }
-/* latin */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm2BL9A.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+
+.s-title{
+  font-family:'Syne',sans-serif;
+  font-size:2rem;
+  margin-bottom:10px;
 }
-/* greek */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm2NL9Hz_.woff2) format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+
+.s-sub{
+  color:rgba(255,255,255,.5);
+  max-width:500px;
+  margin:auto;
 }
-/* latin-ext */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm25L9Hz_.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm2BL9A.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* greek */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm2NL9Hz_.woff2) format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm25L9Hz_.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/syne/v24/8vIH7w4qzmVxm2BL9A.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+
+</style>
+</head>
+
+<body>
+
+<!-- AURORA -->
+<div class="aurora a1"></div>
+<div class="aurora a2"></div>
+
+<!-- NAV -->
+<div id="nav">
+  <div class="nav-logo">Codexify</div>
+  <div class="nav-links">
+    <a href="#">Work</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <h1 class="hero-h">
+    We Build <br>
+    <span class="grad">Digital Future</span>
+  </h1>
+
+  <p class="hero-sub">
+    A global digital agency powered by Bangladesh. We craft modern, scalable and premium web experiences.
+  </p>
+
+  <button class="cta">Start Project →</button>
+</section>
+
+<!-- SECTION -->
+<section class="section">
+  <h2 class="s-title">Why Bangladesh?</h2>
+  <p class="s-sub">
+    Fast growing tech ecosystem, skilled developers and global delivery capability.
+  </p>
+</section>
+
+</body>
+</html>
+fonts.googleapis.com
